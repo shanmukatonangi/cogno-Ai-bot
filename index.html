@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://kit.fontawesome.com/4048ab28bc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4048ab28bc.js" crossorigin="anonymous"></script>
+	<style>
+
+		/* Set display to none for image*/
+		#image {
+			display: none;
+		}
+		iframe{
+			margin: auto;
+		}
+.f1{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
+}
+.f1 h1{
+	font-weight: lighter;
+	color: white;
+}
+
+.f1 #image{
+	height: 100%;
+	width: 95%;
+}
+button{
+	height: 70px;
+	width: 5%;
+	float: right;
+	background-color: orange;
+	color: white;
+	border: none;
+	border-radius: 50px;
+	box-shadow: 5px 10px 18px #212020;
+	
+	
+}
+
+button:hover{
+	width: 7%;
+	height: 100px;
+	border-radius: 70px;
+
+}
+
+
+body{
+	background-image: linear-gradient(135deg, #f19664 10%, #ff4a09 100%);
+}
+
+		
+		@media (min-width: 1050px) and (max-width: 1600px){
+			.f1{
+	height: 100vh;
+	width: 40%;
+}
+           .f1  #image{
+				width: 90%;
+				font-size: 40%;
+			}
+        }
+
+		
+          
+	</style>
+</head>
+
+<body>
+	<div class="f1">
+		<a href="#button" style="text-decoration: none;"><h1>Hello I am iris, click on below chatbot for further quiries<i class="fa-brands fa-android"></i></h1></a>
+            <h3 style="color: white;font-weight:lighter">(scroll to the bottom right to find the iris)</h3>
+		<!-- Add id to image -->
+		<iframe id="image" scrollingattribute:scrolling="no" src="index11.html" style="margin: 0;
+		padding: 0;
+		border: none; "
+			></iframe>
+	</div>
+
+	<div id="button"><button  type="button" 
+		onclick="show()" id="btnID">
+		<i class="fa-brands fa-android"></i>
+	</button></div>
+
+	<script>
+		function show() {
+
+			
+			document.getElementById('image')
+					.style.display = "block";
+
+			document.getElementById('btnID')
+					.style.display = "none";
+		}
+	</script>
+</body>
+
+</html>
